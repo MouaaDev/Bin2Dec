@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bin2Dec | An app to convert binary numbers to decimal numbers</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-section">
+        <h1 class="title"><span class="mono title">Binary</span>-To-Decimal</h1>
+        <p class="description">
+          An app to convert binary numbers to decimal numbers
+        </p>
+      </div>
+      <form>
+        <div class="bin-input">
+          <label for="binary" class="mono bin-label">Binary:</label>
+          <input
+            type="text"
+            name="binary"
+            id="binary"
+            placeholder="e.g. : 10101111"
+            autocomplete="off"
+          />
+          <span class="warning">Please enter binary numbers only!</span>
+        </div>
+        <div class="dec-input">
+          <label for="decimal" class="dec-label">Decimal:</label>
+          <textarea
+            name="decimal"
+            id="decimal"
+            cols="30"
+            rows="5"
+            readonly
+          ></textarea>
+        </div>
+        <div class="buttons">
+          <button class="btn convert-btn">Convert</button>
+          <button type="reset" class="btn clear-btn">clear</button>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

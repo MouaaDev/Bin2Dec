@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100vh;
+  background-color: #eeeeee;
+  /* overflow: hidden; */
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-section {
+  margin: 3rem 0 6rem 0;
+  width: 80%;
+}
+
+.title {
+  font-size: 4.2rem;
+}
+
+.mono {
+  font-family: "Roboto Mono", monospace;
+}
+
+.description {
+  font-size: 1.4rem;
+  color: #585858;
+  font-weight: 300;
+}
+
+form {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.bin-input,
+.dec-input {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.bin-input {
+  margin-bottom: 2rem;
+}
+
+.bin-label,
+.dec-label {
+  font-size: 2rem;
+}
+
+input,
+textarea {
+  border: 1px solid rgba(116, 116, 116, 0.25);
+  border-radius: 15px;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+#binary {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.warning {
+  color: #9f0000;
+  font-size: 1.5rem;
+  visibility: hidden;
+}
+
+.warning.visible {
+  visibility: visible;
+}
+
+#decimal {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+}
+
+#binary::placeholder {
+  opacity: 0.3;
+}
+
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  margin-left: 1rem;
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+
+.convert-btn {
+  background-color: #9f0000;
+}
+
+.clear-btn {
+  background-color: #585858;
+}
+
+@media screen and (min-width: 855px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 4.8rem;
+  }
+
+  .container {
+    width: 800px;
+  }
+}
